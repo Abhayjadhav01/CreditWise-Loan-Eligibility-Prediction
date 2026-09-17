@@ -12,7 +12,8 @@ The application collects applicant information through a modern web interface, s
 
 ### 🏠 CreditWise Home / Application Page
 
-![CreditWise Home](screenshots/home.png)
+![CreditWise Home](<img width="1920" height="1080" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/338cc5dc-4122-4391-8dd9-c4c7a50a9840" />
+)
 
 The application provides a clean interface where users can enter the applicant's information required for loan eligibility prediction.
 
@@ -20,7 +21,8 @@ The application provides a clean interface where users can enter the applicant's
 
 ### 📝 Loan Application Form
 
-![Loan Application Form](screenshots/application-form.png)
+![Loan Application Form](<img width="1920" height="1080" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/b4867c61-fce4-4d10-9b1d-c4ffc0775a9f" />
+)
 
 The form collects financial, employment, demographic, and loan-related information from the applicant.
 
