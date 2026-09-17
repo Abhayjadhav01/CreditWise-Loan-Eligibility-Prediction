@@ -1,0 +1,355 @@
+/* ================================
+   CREDITWISE - MODERN UI
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.18), transparent 30%),
+        radial-gradient(circle at 90% 90%, rgba(34, 197, 94, 0.15), transparent 30%),
+        linear-gradient(135deg, #eefaff, #ffffff, #f2fff7);
+    min-height: 100vh;
+    padding: 45px 20px;
+    color: #1e293b;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 28px;
+    box-shadow:
+        0 20px 60px rgba(15, 23, 42, 0.12),
+        0 4px 15px rgba(8, 126, 164, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* ================================
+   HEADER
+================================ */
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg, #087ea4, #16a34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 9px;
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+input,
+select {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1.5px solid #dbe3ea;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #1e293b;
+    background: #f8fafc;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+input:hover,
+select:hover {
+    border-color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+    border-color: #0891b2;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(8, 145, 178, 0.10);
+    transform: translateY(-1px);
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+button {
+    width: 100%;
+    margin-top: 35px;
+    padding: 16px;
+    border: none;
+    border-radius: 13px;
+
+    background: linear-gradient(90deg, #087ea4, #0e9f6e);
+    color: white;
+
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(8, 126, 164, 0.22);
+
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(8, 126, 164, 0.30);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   RESULT MESSAGE
+================================ */
+
+#result {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 18px;
+    border-radius: 14px;
+    display: none;
+}
+
+/* ================================
+   RESULT PAGE
+================================ */
+
+.result-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* ================================
+   RESULT CARD
+================================ */
+
+.result-card {
+    width: 570px;
+    text-align: center;
+
+    padding: 60px 45px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 70px rgba(15, 23, 42, 0.15),
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+    animation: cardAppear 0.5s ease;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* ================================
+   RESULT ICON
+================================ */
+
+.result-icon {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 60px;
+    font-weight: 800;
+
+    color: white;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    animation: iconPop 0.5s ease 0.15s both;
+}
+
+@keyframes iconPop {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ================================
+   RESULT TEXT
+================================ */
+
+.result-card h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+/* ================================
+   RESULT BUTTON
+================================ */
+
+.result-card button {
+    width: auto;
+    min-width: 210px;
+    padding: 14px 28px;
+    margin-top: 0;
+}
+
+/* ================================
+   APPROVED
+================================ */
+
+.result-card.approved {
+    border-top: 8px solid #16a34a;
+}
+
+.result-card.approved .result-icon {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.result-card.approved h1 {
+    background: linear-gradient(90deg, #15803d, #16a34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ================================
+   REJECTED
+================================ */
+
+.result-card.rejected {
+    border-top: 8px solid #dc2626;
+}
+
+.result-card.rejected .result-icon {
+    background: linear-gradient(135deg, #dc2626, #f43f5e);
+}
+
+.result-card.rejected h1 {
+    background: linear-gradient(90deg, #b91c1c, #dc2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .container {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .result-card {
+        width: 100%;
+        padding: 45px 25px;
+    }
+
+    .result-card h1 {
+        font-size: 32px;
+    }
+
+    .result-icon {
+        width: 95px;
+        height: 95px;
+        font-size: 48px;
+    }
+}

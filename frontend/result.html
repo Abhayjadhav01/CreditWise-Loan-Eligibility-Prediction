@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CreditWise - Result</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="result-page">
+
+        <div class="result-card" id="resultCard">
+
+            <div class="result-icon" id="resultIcon">
+                ✓
+            </div>
+
+            <h1 id="resultTitle">
+                Loan Eligible
+            </h1>
+
+            <p id="resultMessage">
+                Your loan eligibility has been successfully evaluated.
+            </p>
+
+            <button onclick="goBack()">
+                ← Back to Application
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const prediction = sessionStorage.getItem("loanPrediction");
+
+        const card = document.getElementById("resultCard");
+        const icon = document.getElementById("resultIcon");
+        const title = document.getElementById("resultTitle");
+        const message = document.getElementById("resultMessage");
+
+        if (prediction === "Yes") {
+
+            card.classList.add("approved");
+
+            icon.textContent = "✓";
+
+            title.textContent = "Loan Eligible";
+
+            message.textContent =
+                "Based on the provided information, the applicant is eligible for the loan.";
+
+        } else {
+
+            card.classList.add("rejected");
+
+            icon.textContent = "✕";
+
+            title.textContent = "Loan Not Eligible";
+
+            message.textContent =
+                "Based on the provided information, the applicant is not eligible for the loan.";
+        }
+
+        function goBack() {
+            window.location.href = "index.html";
+        }
+
+    </script>
+
+</body>
+</html>
