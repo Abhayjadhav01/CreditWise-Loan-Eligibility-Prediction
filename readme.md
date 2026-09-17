@@ -10,18 +10,9 @@ The application collects applicant information through a modern web interface, s
 
 ## 📸 Application Screenshots
 
-### 🏠 CreditWise Home / Application Page
-
-![CreditWise Home](<img width="1920" height="1080" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/338cc5dc-4122-4391-8dd9-c4c7a50a9840" />
-)
-
-The application provides a clean interface where users can enter the applicant's information required for loan eligibility prediction.
-
----
-
 ### 📝 Loan Application Form
 
-![Loan Application Form](<img width="1920" height="1080" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/b4867c61-fce4-4d10-9b1d-c4ffc0775a9f" />
+![Loan Application Form](<img width="1920" height="1080" alt="Screenshot (300)" src="https://github.com/user-attachments/assets/f7fb6d13-ce12-494f-b0ec-f4d5922265dd" />
 )
 
 The form collects financial, employment, demographic, and loan-related information from the applicant.
@@ -30,7 +21,8 @@ The form collects financial, employment, demographic, and loan-related informati
 
 ### ✅ Loan Eligible Result
 
-![Loan Eligible Result](screenshots/approved-result.png)
+![Loan Eligible Result](<img width="1920" height="1080" alt="Screenshot (301)" src="https://github.com/user-attachments/assets/fc043c9a-8554-4e44-bf13-45f38114cff8" />
+)
 
 The prediction result is displayed on a separate result page when the model predicts loan eligibility.
 
@@ -38,7 +30,8 @@ The prediction result is displayed on a separate result page when the model pred
 
 ### ❌ Loan Not Eligible Result
 
-![Loan Not Eligible Result](screenshots/rejected-result.png)
+![Loan Not Eligible Result](<img width="1920" height="1080" alt="Screenshot (302)" src="https://github.com/user-attachments/assets/9b2f9da5-92f4-4cee-bd6f-f26d4603d704" />
+)
 
 The application also provides a separate result state when the model predicts that the applicant is not eligible.
 
@@ -46,7 +39,8 @@ The application also provides a separate result state when the model predicts th
 
 ### 🔌 FastAPI Documentation
 
-![FastAPI Documentation](screenshots/api-docs.png)
+![FastAPI Documentation](<img width="1920" height="1080" alt="Screenshot (303)" src="https://github.com/user-attachments/assets/bd56fa75-ddfb-4231-9b56-af5f956fc690" />
+)
 
 The backend provides a REST API for making loan eligibility predictions.
 
