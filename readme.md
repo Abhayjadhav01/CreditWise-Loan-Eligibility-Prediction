@@ -279,7 +279,7 @@ Credit_wise_LOan approval/
 │   └── loan_model.pkl
 │
 ├── notebooks/
-│   └── loan_eligibility.ipynb
+│   └── loan.ipynb
 │
 ├── Screenshots/
 │   ├── form.png
