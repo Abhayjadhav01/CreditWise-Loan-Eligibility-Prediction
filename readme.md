@@ -4,6 +4,16 @@ An end-to-end Machine Learning web application that predicts **loan eligibility*
 
 The project converts a Machine Learning model developed in Jupyter Notebook into a complete application using **Python, FastAPI, HTML, CSS, and JavaScript**.
 
+## 🌐 Live Demo
+
+🚀 **CreditWise is live and available online!**
+
+👉 **[Open CreditWise – Loan Eligibility Prediction](https://creditwise-frontend.getvoroa.com/)**
+
+You can use the deployed application to enter applicant and loan details and receive a Machine Learning-based loan eligibility prediction.
+
+> **Note:** This project is developed for educational and demonstration purposes. The prediction should not be considered a real financial or banking decision.
+
 ---
 
 ## 📸 Application Screenshots
