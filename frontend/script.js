@@ -9,7 +9,7 @@ const LOCAL_API_URL = "http://127.0.0.1:8000";
 
 // After deploying the FastAPI backend,
 // replace this with your Voroa backend URL.
-const LIVE_API_URL = "https://creditwise-api.getvoroa.com";
+const LIVE_API_URL = "https://creditwise-api.getvoroa.com/";
 
 // Automatically choose the API
 const isLocal =
