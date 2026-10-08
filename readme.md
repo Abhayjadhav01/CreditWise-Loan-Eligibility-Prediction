@@ -8,7 +8,7 @@ The project converts a Machine Learning model developed in Jupyter Notebook into
 
 🚀 **CreditWise is live and available online!**
 
-👉 **[Open CreditWise – Loan Eligibility Prediction](https://creditwise-frontend.getvoroa.com/)**
+👉 **[Open CreditWise – Loan Eligibility Prediction](https://creditwise-loan-eligibility-pr.getvoroa.com/)**
 
 You can use the deployed application to enter applicant and loan details and receive a Machine Learning-based loan eligibility prediction.
 
